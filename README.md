@@ -4,7 +4,7 @@ Inspired by the popular childhood toy, this program uses mainly CSS grid and Jav
 This project is part of The Odin Project's Web Development 101 curriculum.
 
 
-link to project: https://www.theodinproject.com/courses/web-development-101/lessons/etch-a-sketch-project
+link to project tutortial: https://www.theodinproject.com/courses/web-development-101/lessons/etch-a-sketch-project
 
 to view locally: 1.) download zip file
 		 2.) extract folder inside zip file to somewhere on your computer
