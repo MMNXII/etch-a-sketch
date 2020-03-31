@@ -7,13 +7,14 @@ html, body {
 }
 
 body {
-    background-color: lightblue;
+    background-image: linear-gradient(rgb(0, 80, 112), rgb(43, 0, 68));
 }
 
 #title {
     margin: auto;
     text-align: center;
     font-family: sans-serif;
+    color: rgb(0, 255, 255);
 }
 
 #colorButtons {
