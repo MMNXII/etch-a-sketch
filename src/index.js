@@ -93,9 +93,12 @@ import anime from '../node_modules/animejs/lib/anime.es.js';
           resetbtn.addEventListener("click", resetSketch)
 
           function resetSketch() {
-
+            gridItemArr.forEach(grid => {
+           
               grid.style.backgroundColor = "#FFFF"
-            }
+              
+            })
+          }
 
           
 
