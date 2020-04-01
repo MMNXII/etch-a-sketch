@@ -18,13 +18,14 @@ body {
 }
 
 #buttonsDiv {
-    margin: auto;
+    margin-top: 1em;
     text-align: center;
 }
 
-#resetBtn {
-    margin-top: 0rem;    
+button {
+    margin: 1em;
 }
+
 
 #sketchContainer {
     display: grid;

@@ -46,7 +46,7 @@ import anime from '../node_modules/animejs/lib/anime.es.js';
           btnDiv.appendChild(colorButton);
           
     let bwButton = document.createElement("button");
-        bwButton.textContent = "Black and White";
+        bwButton.textContent = "Black";
         bwButton.id = "bwBtn";
           btnDiv.appendChild(bwButton);
 
