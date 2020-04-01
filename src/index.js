@@ -105,6 +105,36 @@ import anime from '../node_modules/animejs/lib/anime.es.js';
 
   })();
 
+  anime({
+    targets: "#title",
+    duration: 1500,
+    delay: anime.stagger(500, { start: 300, from: "first" }),
+    opacity: [0, 1],
+    translateY: ["-1rem", 0],
+    direction: "normal",
+
+  });
+
+  anime({
+    targets: "#sketchContainer",
+    duration: 1500,
+    delay: 700,
+    opacity: [0, 1],
+    translateY: ["2rem", 0],
+    direction: "normal",
+
+  });
+
+  anime({
+    targets: "#buttonsDiv",
+    duration: 1500,
+    delay: 1400,
+    opacity: [0, 1],
+    translateY: ["-1rem", 0],
+    direction: "normal",
+
+  });
+
 
 })();
 
