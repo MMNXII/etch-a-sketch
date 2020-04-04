@@ -63,16 +63,16 @@ import anime from '../node_modules/animejs/lib/anime.es.js';
             anime({
               targets: colorButton,
               translateX: {
-                value: '*=1.5', // 100px * 2.5 = '250px'
+                value: '*=1.5',
                 duration: 500
               },
               width: {
-                value: '+=10px', // 28 - 20 = '8px'
+                value: '+=10px',
                 duration: 500,
                 easing: 'easeInOutSine'
               },
               rotate: {
-                value: '+=1turn', // 0 + 2 = '2turn'
+                value: '+=1turn',
                 duration: 500,
                 easing: 'easeInOutSine'
               },
@@ -105,16 +105,16 @@ import anime from '../node_modules/animejs/lib/anime.es.js';
             anime({
               targets: bwButton,
               translateX: {
-                value: '*=1.5', // 100px * 2.5 = '250px'
+                value: '*=1.5',
                 duration: 500
               },
               width: {
-                value: '+=10px', // 28 - 20 = '8px'
+                value: '+=10px',
                 duration: 500,
                 easing: 'easeInOutSine'
               },
               rotate: {
-                value: '+=1turn', // 0 + 2 = '2turn'
+                value: '+=1turn',
                 duration: 500,
                 easing: 'easeInOutSine'
               },
@@ -137,12 +137,12 @@ import anime from '../node_modules/animejs/lib/anime.es.js';
             anime({
               targets: resetbtn,
               width: {
-                value: '+=10px', // 28 - 20 = '8px'
+                value: '+=10px',
                 duration: 500,
                 easing: 'easeInOutSine'
               },
               rotate: {
-                value: '+=1turn', // 0 + 2 = '2turn'
+                value: '+=1turn',
                 duration: 500,
                 easing: 'easeInOutSine'
               },
