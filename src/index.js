@@ -59,6 +59,26 @@ import anime from '../node_modules/animejs/lib/anime.es.js';
           colorButton.addEventListener("click", color);
 
           function color() {
+
+            anime({
+              targets: colorButton,
+              translateX: {
+                value: '*=1.5', // 100px * 2.5 = '250px'
+                duration: 500
+              },
+              width: {
+                value: '+=10px', // 28 - 20 = '8px'
+                duration: 500,
+                easing: 'easeInOutSine'
+              },
+              rotate: {
+                value: '+=1turn', // 0 + 2 = '2turn'
+                duration: 500,
+                easing: 'easeInOutSine'
+              },
+              direction: 'alternate'
+            });
+
             gridItemArr.forEach(grid => {
               grid.addEventListener("mouseover", getRandomColor);
 
@@ -81,6 +101,26 @@ import anime from '../node_modules/animejs/lib/anime.es.js';
           bwButton.addEventListener("click", bw);
           
           function bw() {
+
+            anime({
+              targets: bwButton,
+              translateX: {
+                value: '*=1.5', // 100px * 2.5 = '250px'
+                duration: 500
+              },
+              width: {
+                value: '+=10px', // 28 - 20 = '8px'
+                duration: 500,
+                easing: 'easeInOutSine'
+              },
+              rotate: {
+                value: '+=1turn', // 0 + 2 = '2turn'
+                duration: 500,
+                easing: 'easeInOutSine'
+              },
+              direction: 'alternate'
+            });
+
             gridItemArr.forEach(grid => {
               grid.addEventListener("mouseover", bandw);
 
@@ -93,6 +133,22 @@ import anime from '../node_modules/animejs/lib/anime.es.js';
           resetbtn.addEventListener("click", resetSketch)
 
           function resetSketch() {
+
+            anime({
+              targets: resetbtn,
+              width: {
+                value: '+=10px', // 28 - 20 = '8px'
+                duration: 500,
+                easing: 'easeInOutSine'
+              },
+              rotate: {
+                value: '+=1turn', // 0 + 2 = '2turn'
+                duration: 500,
+                easing: 'easeInOutSine'
+              },
+              direction: 'alternate'
+            });
+
             gridItemArr.forEach(grid => {
            
               grid.style.backgroundColor = "#FFFF"
