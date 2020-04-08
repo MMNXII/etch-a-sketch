@@ -16,6 +16,13 @@ body {
     font-family: sans-serif;
     color: rgb(0, 255, 213);
 }
+#sources {
+    display: inline;
+    position: fixed;
+    bottom: 0;
+    right: 0;
+    font-size: .7em;
+}
 
 /* Buttons */
 #buttonsDiv {
