@@ -17,7 +17,6 @@ body {
     color: rgb(0, 255, 213);
 }
 #sources {
-    display: inline;
     position: fixed;
     bottom: 0;
     right: 0;
