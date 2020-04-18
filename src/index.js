@@ -3,12 +3,39 @@
 import './index.css';
 // eslint-disable-next-line import/extensions
 import anime from '../node_modules/animejs/lib/anime.es.js';
+import '../node_modules/granim/dist/granim.min.js';
 
+(function canvasBg() {
+  const canvasBg = document.createElement('canvas');
+  canvasBg.id = 'canvas-background';
+  document.body.appendChild(canvasBg);
+
+  let canvasBackground = new Granim({
+    element: canvasBg,
+    direction: 'top-bottom',
+    isPausedWhenNotInView: true,
+    states: {
+      'default-state': {
+        gradients: [
+          [
+            { color: '#3d001f', pos: 0.2 },
+            { color: '#3d0015', pos: 0.8 },
+            { color: '#433b69', pos: 1 },
+          ],
+          [
+            { color: '#785800', pos: 0 },
+            { color: '#00260c', pos: 0.2 },
+            { color: '#001826', pos: 0.75 },
+          ],
+        ],
+      },
+    },
+  });
+})();
 
 (function etchASketch() {
   let gridItem;
   const gridItemArr = [];
-
 
   (function createTitle() {
     const title = document.createElement('h1');
@@ -16,8 +43,7 @@ import anime from '../node_modules/animejs/lib/anime.es.js';
     title.id = 'title';
 
     document.body.appendChild(title);
-  }());
-
+  })();
 
   (function createSketchPad() {
     const sketchDiv = document.createElement('div');
@@ -30,14 +56,12 @@ import anime from '../node_modules/animejs/lib/anime.es.js';
       gridItemArr.push(gridItem);
       sketchDiv.appendChild(gridItem);
     }
-  }());
-
+  })();
 
   (function colorBwBtn() {
     const btnDiv = document.createElement('div');
     btnDiv.id = 'buttonsDiv';
     document.body.appendChild(btnDiv);
-
 
     const colorButton = document.createElement('button');
     colorButton.textContent = 'Color';
@@ -48,7 +72,6 @@ import anime from '../node_modules/animejs/lib/anime.es.js';
     bwButton.textContent = 'Black';
     bwButton.id = 'bwBtn';
     btnDiv.appendChild(bwButton);
-
 
     const resetbtn = document.createElement('button');
     resetbtn.textContent = 'Reset';
@@ -86,7 +109,8 @@ import anime from '../node_modules/animejs/lib/anime.es.js';
           }
           if (hexNum === '#000000') {
             grid.removeEventListener('mouseover', getRandomColor);
-          } if (grid.style.backgroundColor !== '#FFFFFF') {
+          }
+          if (grid.style.backgroundColor !== '#FFFFFF') {
             grid.removeEventListener('mouseover', getRandomColor);
           }
           grid.style.backgroundColor = hexNum;
@@ -149,7 +173,7 @@ import anime from '../node_modules/animejs/lib/anime.es.js';
     }
 
     resetbtn.addEventListener('click', resetSketch);
-  }());
+  })();
 
   anime({
     targets: '#title',
@@ -158,7 +182,6 @@ import anime from '../node_modules/animejs/lib/anime.es.js';
     opacity: [0, 1],
     translateY: ['-1rem', 0],
     direction: 'normal',
-
   });
 
   anime({
@@ -168,7 +191,6 @@ import anime from '../node_modules/animejs/lib/anime.es.js';
     opacity: [0, 1],
     translateY: ['2rem', 0],
     direction: 'normal',
-
   });
 
   anime({
@@ -178,6 +200,5 @@ import anime from '../node_modules/animejs/lib/anime.es.js';
     opacity: [0, 1],
     translateY: ['-1rem', 0],
     direction: 'normal',
-
   });
-}());
+})();
