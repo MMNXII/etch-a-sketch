@@ -8,6 +8,10 @@ module.exports = {
   },
   mode: 'production',
   watch: true,
+  watchOptions: {
+    poll: true,
+    ignored: /node_modules/,
+  },
   module: {
     rules: [
       {
